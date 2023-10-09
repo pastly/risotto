@@ -4,7 +4,7 @@
     {{ .Content }}
 
     <ul>
-    {{ range where .Pages "Type" "in" "[camaro, posts, tags]" }}
+    {{ range where .Pages "Type" "in" "[camaro, posts, wsss, tags]" }}
         {{ .Render "li" }}
     {{ end }}
     </ul>
