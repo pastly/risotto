@@ -1,1 +1,4 @@
-<li>{{ .Date.Format "2006-01-02" }} <a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></li>
+<li>
+{{ if ne .Type "tags" }}{{ .Date.Format "2006-01-02" }}{{ end }}
+<a href="{{ .Permalink }}">{{ .Title | markdownify }}</a>
+</li>

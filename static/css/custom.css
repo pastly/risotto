@@ -9,3 +9,7 @@ article + article {
 .page {
     max-width: 80rem;
 }
+
+.aside__images img {
+    max-width: 60px;
+}

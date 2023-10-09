@@ -6,6 +6,13 @@
 </div>
 {{ end }}
 
+<div class="aside__images">
+    {{ range $item := .Site.Params.about.images }}
+    <!--<img src="{{$item}}" />-->
+    <img src="{{$item | absURL}}" />
+    {{ end }}
+</div>
+
 <ul class="aside__social-links">
     {{ range $item := .Site.Params.socialLinks }}
     <li>
