@@ -13,3 +13,7 @@ article + article {
 .aside__images img {
     max-width: 60px;
 }
+
+video {
+    max-width: 100%;
+}
